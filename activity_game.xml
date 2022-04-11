@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GameActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/chansTv"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:id="@+id/hiddenWord"
+        android:layout_below="@+id/chansTv"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="300dp">
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RestartGame"
+            android:layout_gravity="center"
+            android:layout_marginLeft="126dp"
+            android:onClick="wordReset"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="@string/Q"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"
+        />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="w"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="e"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="r"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="t"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="y"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="u"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="i"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="o"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="39sp"
+            android:text="p"
+            android:onClick="onTapLetter"
+            android:layout_marginRight="2sp"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="a"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="s"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="d"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="f"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="g"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="39sp"
+            android:text="h"
+            android:onClick="onTapLetter"
+            android:layout_marginRight="2sp"/>
+
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="39sp"
+            android:text="j"
+            android:onClick="onTapLetter"
+            android:layout_marginRight="2sp"/>
+
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="39sp"
+            android:text="k"
+            android:onClick="onTapLetter"
+            android:layout_marginRight="2sp"/>
+
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="39sp"
+            android:text="l"
+            android:onClick="onTapLetter"
+            android:layout_marginRight="2sp"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal">
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="z"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="x"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="c"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="x"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="c"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="v"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="b"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="n"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="39sp"
+        android:text="m"
+        android:onClick="onTapLetter"
+        android:layout_marginRight="2sp"/>
+
+</LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>
